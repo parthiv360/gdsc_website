@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>HOME</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scrollbar  CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>GDSC, BIT MESRA</h3>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABUFBMVEX///9ChfQNnFjqQzX7vAj7uAD7ugAAlUgAmlv/vQDqQTMAl009g/QAmlQse/MAm1rpMyE5gfTpLBfpOSnrSz35zcp+qPfG4tDqPS5CqW+93cnpLBbpNSR3vZM4h/lbk/X+9+r0+P7p8P37wCiow/n96cD61tP0pJ/tW09asX/j8ejzmpT++fm02cL3t7PweXCGw57wgnqi0LTv9/H84uDuaV/97uydaarV4vyHrvf97c3C1ftkmPbR3/z7yVf814z8zmv7xUT+9ua2zfr82ZAzpWf4wr+Zy6xNrXd/wJjyjIT2r6pquInub2XtKQD4m43cNzTDUXCpYpezXonPUWPdxtSRa7BMeeJpetV4dcndSkrsVUm8W36IcLvDV3aZufjYTFK0msaOrk384arouRRipEnMtSSprzN4p0NKok67siz80neXrDrUtiFYnjSwvmzPPRd0AAAIVUlEQVR4nO2b6VfbVhDFkbFskGTZkh0wYGOz74FAAEMc9iULaZulSVra0hZaEkja//9bJRnZliw9zVtkcnrmdw4f/aR7Zu57cyXR04MgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgSCjTM8uzhUJh9tHLxyw/H1yZO04kskPl1XnRdyaEjQXFzBcVm2LJLMws0v18vqym1UwDNT20FM9NcrC4YOaV3hZKyZyh+PnaWTqTaCOjZr4xjQ+L+V4fSu4c3KtLqkefQ3poMM47pmN6Nqf4BVoUzRPY75+nO/TZdUyfrcV731A2ls1igD67jCMgiWU1SKDTq6dx3zwAy4Ah+hyJ09ErrIQJtFATw/FLIHPSWwpq0KbEYuSWOhzYoq1WfXavR8f0eqAB28gvRyyx1rnH+DWW782OG48IDeoS1afPCT3atONqdwT5mcl1nBABFGeJi6wRe7Rpx+N7ODlOCkQDtjCJp+JpdAkbrTrXZTs+Xjdh+iwnLpAWykbZsKVxpVviLBZfAAzoohQIK82DmvSuVdWuDXIvSxADNslthC+1BGtSV2N37PjgPOqE8Csk7KYr0CZ1W/UsdjtuvAIbsKmQMLqd0Sm0T4547bi4MAI3oEvpYfiCc7QKrVaNM1cFZKTuK7RzVUytGpKRIhHapQ7x5CorIzHpE7rTtDQKz1XEjBSlUNhp0Y7gXHWiAEe0AISd+P4yCsxVrAZsQJ7aEoxt2tAoJleBMhIBkxifSAEfoFFEroJlpHCEpKdwuAc5cEYKL+ED8hXKHG3qlJErV1FkpNASrkdcY42rTRsaWQe5xRcMI5oPpUQ4KhoscfZpws5VTHakzEjBjET0qE3o41IajfR2pM5IwQJfQq41J0CiZUeqk4MhIwWgjBBm7nbO+BuVzo48I1obpV7AA+8Gq2nOHdUBnKse5gUYsLdoLlC8QZx/JkQjKFfxjWguivmK8jXwcFaAGwG5amP5u1yplC/yiVRyBcAe6udUSBkzaVKuWvz+h9dvNjc3377rHcmzi8znQVtoB2tlMXYMz1U/vv8w6vLxTYGxW4vmC8pX+C3mh8TsqsG5qlbXR6Umo6PS+2KJXp9irjN9h+GylBBjx4BctaVrkpdR6S3t2KaUCsAX2+EIsqP/Afm4ZEidjH54TaUxn6P5/iIM/3cZjKTP2hetGf4Cuhp/+hlsx6L5KHLMhjF4LMKO6lBrxXE9WJ/jx80SyI6KOQseYaJZUkXMqk2JY1pIBeF2VEoKtwG9rAhoVdVt1IEgD7Zr/PhuhNyqxRzxcRMT83P8GtON7eZpeI82W/XX8xypQZcFGdDL4DF//ncWqpB6tGXHsCdSSu5coAG9rPLa0XlTFV3COzv+EmRHJV8EhkA2nnO2ql3EKBe2NAbYkWdEg8GZq1RrRoUKdOxY8NiRPiOxMMwzyGXKPTVYk7oa37TsyJaRWDgN+DgTynHPIbyGjsYPv93ZMV9iy0gs8OSqngs6hbYdf7fsGL8BvVi5ilFjzxatQqtV3ysjfBmJhSXWGoK30naN2h/d1mdR/TObZaoh4LzvxKjUui3wMtV/9Vcfg0JqHzbQ9IGxburbnpCTyVT/3yq1Rtq9tK2M+mTX9FX35FTSpr//OkHZqnTnoU+j9KQ7Anfv9Dkak5/6aDQe08w0nej1LtjxMikn26GyozXT9AwwbTV3aPpWzHbc3vfqc1oVbkd7LgVmizAMI047Ng3o13gNbFUnIELyIVGj9DQugUeB+ijs2Ph0irOIdqvWx+PQN5XsaNAWqf6vnyNbNZNorMQy1vjKqF8It+PBfmgB3Va9yURoTLtvMCTOPrU1aodC9VVvI/Q1NH4hDnJq2V1uPOyBMA16RaAdLwH6HI1XBDuqz1oL1ohPTIFYg5wgO05NEAzohWDHdoFWFSu8201D44UAfQc7wAK6rXqTCNKYLvvWvdC59xtJiB13qfQ5GpNfOlo16J8zxusd79dY0Ply1WUK3KDtGq8+ZdtEZhMhX548CXzFRguPHbfhBvRiZcfrz9m+vqz115f559+DsCtMimlVxlxVpTOgX2N/8uvN9fX1zdXEFOEiYwNCWpUpV9Eb0E+/jXwZcZ1aXcSuSp+r/BmJsZLyLeARoCg70uSqgIzEpG8n1IBeRJ0c4CEnPEPQICdJBvQyLsaOOvBw3BFTwCOwPpuakCEHtqmKEJiS96pUAi0ONQGtqgP21D1+gSl5f5tWn82FgFbVI0//S36BNAb0IsCORj3iGlVugbQG9PKU245RfbrHuYuyGNDLocFnR61CXP6As4TyBJMBPYxt8Z2OOnG42eUqoZyKGtFg8OUqY4u0dpJDYUreFaLPhm+QIyy8zd6k8BENBkeuIh0Y7EeFCAN6Gev8xBaqkGBEVhumBBnQC2uuMgjnBdtZActILDyRWDSS5u8dBoWiDeiFxY6CFbKPaDAYHnOQphrqLuUb0WBQ5yqBOw3/iAaDMlfphKcZdKcFY0ZigSZXEQdTmrE0bgN6ochVBvFdxgS0TbthQC/gXEXOwEewInbLgF5guUojR2BYABY/osEA5SpyeLKfdEfri2VEgxGdq4yBqDWi8pPIjMRCRK7SpMgH31PEIsY7osEgDnJRPWpD2mzuy4BeCLlKBz3Xvw2TGE9GYiEkVxkwgWG7jZWR4r1tKoLsqFfA74KnUh3bzbdgQC++91WabtB8s+D/QCglE1/k3g9jk5JuGJomaZph6BXabzIOdpOynGogy/vfnj6H2uRWvSJV6luHTN8qbB/t7U9M7O/cTlUF3xiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiC/J/4Dw/mHNZoxaXqAAAAAElFTkSuQmCC" alt="" width="50px">
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>LOOK INTO</p>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                   
+                </li>
+                <li>
+                    <a href="#team">Team</a>
+                </li>
+                <li>
+                    <a href="#event">Events/Workshops</a>
+                </li>
+                <li>
+                    <a href="#upcoming">Upcoming Event</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <!-- <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul> -->
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Navigate</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <h3>Developer Student Club, BITM</h3>
+                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </nav>
+
+            <!-- Home Section -->
+            <div class="home" id="home" style="color: #009961;">
+                <h3 id="home-heading">Home</h3>
+                <p>
+                <img src="data:image/png;base64,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" alt="" width="100px">
+                    <h4>Welcome to the official website of Developer Student Club of BIT MESRA.</h4>
+                   <h4>Student Developer Community at BIT Mesra, Ranchi which aims to help students connect, learn and grow.</h4> 
+                    
+                </p>
+                <br>
+                <br>
+                
+
+                
+            </div>
+            <!-- About Us -->
+            <div id="about" style="color: #009961;">
+                <h3>About Us</h3>
+                <p>
+                    <h4>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eaque consequatur quidem esse facere odit minima aliquid veritatis explicabo, deleniti quisquam velit sapiente? Quos dolore, veritatis et sunt nam porro?
+                    </h4>
+                </p>
+            </div>
+            
+            <br>
+            <br>
+
+            <!-- Team Section -->
+            <div id="team" style="color: #009961;">
+                <h3>Team</h3>
+                <p>
+                    <h4>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eaque consequatur quidem esse facere odit minima aliquid veritatis explicabo, deleniti quisquam velit sapiente? Quos dolore, veritatis et sunt nam porro?
+                    </h4>
+                </p>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Events/worskshop section -->
+            <div id="event" style="color: #009961;">
+                <h3>Events/Workshop</h3>
+                <p>
+                    <h4>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eaque consequatur quidem esse facere odit minima aliquid veritatis explicabo, deleniti quisquam velit sapiente? Quos dolore, veritatis et sunt nam porro?
+                    </h4>
+                </p>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Upcoming  -->
+            <div id="upcoming" style="color: #009961;">
+                <h3>Upcoming Events</h3>
+                <p>
+                    <h4>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic eaque consequatur quidem esse facere odit minima aliquid veritatis explicabo, deleniti quisquam velit sapiente? Quos dolore, veritatis et sunt nam porro?
+                    </h4>
+                </p>
+            </div>
+
+            <br>
+            <br>
+            <!-- Contact us -->
+            <div id="contact" style="color: #009961;">
+                <h3>Contact Us</h3>
+                <p>
+                    <h4>
+                        <p>
+                            To know more about us ...
+                        </p>
+                    </h4>
+                    <p>
+                    <button type="button" class="btn btn-info">Contact Us
+                        <i class="bi bi-envelope-fill"></i>
+                    </button>
+                </p>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="script.js">
+        
+    </script>
+</body>
+
+</html>
